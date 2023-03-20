@@ -3,6 +3,8 @@
 
     $query1 = "SELECT * FROM customers;";
     $sql1 = mysqli_query($conn, $query1);
+
+    $no = 1;
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +18,11 @@
     <title>Customers</title>
 </head>
 <body>
-    <!-- Customers -->
     <h1>Data Customers</h1>
+    <a href="inputcustomers.php" type="button" class="tambah">
+        <i class="fa-solid fa-plus"></i>
+        Tambah Data
+    </a>
     <table border="2">
         <thead>
             <tr>
@@ -83,12 +88,12 @@
                 </td>
                 <td>
                     <div class=logo>
-                        <button type="button">
-                            <a href="input.php"><i class="fa-solid fa-pencil"></i></a>
-                        </button>
-                        <button>
-                            <a href="input.php"><i class="fa-solid fa-trash-can"></i></a>
-                        </button>
+                        <a href="inputcustomers.php?ubah=<?php echo $no++?>" type="button" class="button">
+                            <i class="fa-solid fa-pencil"></i>
+                        </a>
+                        <a href="inputcustomers.php" type="button "class="button">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
                     </div>
                 </td>
             </tr>

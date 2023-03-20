@@ -1,10 +1,12 @@
+.container{
+    display: flex;
+}
+
 table{
-    width: 140%;
+    width: 150%;
     height: 20px;
 }
-tr:hover{
-    background-color: rgba(0, 0, 0, 0.195);
-}
+
 h1{
     text-align: center;
 }
@@ -14,8 +16,8 @@ th{
 }
 
 th:nth-child(14){
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 td{
@@ -28,34 +30,36 @@ td{
     display: flex;
     position: relative;
 }
-button{
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 20%;
-}
 
-.logo a{
+.tambah{
+    border-radius: 3px;
     color: white;
+    background-color: blue;
+    align-content: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
 }
 
-button:nth-child(1){
+.logo button{
     height: 25px;
     width: 40px;
     background-color: green;
-    align-content: center;
+    color: black;
     text-decoration: none;
     border: 2px solid transparent;
     font-weight: bold;
-    transition: .3s;       
+    padding: 9px 30px;
+    transition: .3s;  
 }
 
-button:nth-child(2){
+.logo button:nth-child(2){
     height: 25px;
     width: 40px;
-    background-color: red;
-    align-content: center;
+    background-color: blue;
+    color: black;
     text-decoration: none;
-    border: 2px solid transparent;
     font-weight: bold;
-    transition: .3s;       
+    padding: 9px 30px;
+    transition: .3s;        
 }
